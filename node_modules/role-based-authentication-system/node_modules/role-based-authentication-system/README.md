@@ -22,4 +22,8 @@ Authentication the user using the Role-Based Access Control(RBAC). And hashing t
 - Register the user with the JWT sign and hash password
 ![alt text](image.png)
 
+- Database saved in MongoDB
+![alt text](image-2.png)
+
 - Login user
+![alt text](image-1.png)
