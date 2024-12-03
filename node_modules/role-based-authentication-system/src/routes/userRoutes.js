@@ -1,8 +1,10 @@
 const express = require('express');
+const app = express();
 const verifytoken = require('../middlewares/authMiddleware')
-const authorizeRole = require('../middlewares/authMiddleware');
-
+const authorizeRole = require('../middlewares/roleMiddleware');
 const router = express.Router();
+app.use(express.json());
+
 
 // admin can accesss
 router.get('/admin', verifytoken, authorizeRole("admin"), (req, res) => {

@@ -1,7 +1,7 @@
-## Role-Based-Authentication-System
+# Role-Based-Authentication-System
 Authentication the user using the Role-Based Access Control(RBAC). And hashing the password before it store to the database.
 
-# Tech Stack used
+## Tech Stack used
 - JavaScript
 - NodeJs
 - Express Js 
