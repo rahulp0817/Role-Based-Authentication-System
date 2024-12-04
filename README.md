@@ -18,6 +18,7 @@ Can be able to registration, login, and reset of password with validation of inp
 3. Create a .env file and put the `PORT`, `JWT_SERECT` and `CONNECTION_STRING`
 4. Create a new MongoDB database and replace the `MONGO_URI` or use docker to create a Mongo image
 5. Run the application by executing `node index.js` in the terminal or run `npm run dev`
+6. RUn the role based authentication use the barear token get after login or registration to access the particular role.
 
 ## Execution
 - Register the user with the JWT sign and hash password
