@@ -1,5 +1,6 @@
 # Role-Based-Authentication-System
 Authentication the user using the Role-Based Access Control(RBAC). And hashing the password before it store to the database.
+Can be able to registration, login, and reset of password with validation of input.
 
 ## Tech Stack used
 - JavaScript
@@ -25,5 +26,10 @@ Authentication the user using the Role-Based Access Control(RBAC). And hashing t
 - Database saved in MongoDB
 ![alt text](image-2.png)
 
+- Error regitrstions
+<img width="791" alt="postman-err-r1" src="https://github.com/user-attachments/assets/dd50cf72-c41b-4f4b-a1f5-1c3ce2c11e0e">
+
 - Login user
 ![alt text](image-1.png)
+
+- Admin Access

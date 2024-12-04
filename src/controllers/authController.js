@@ -64,7 +64,7 @@ const register = async (req, res) => {
   } catch (e) {
     res.status(500).json({
       message: "Error in registration",
-      details: error.message
+      details: e.message
     });
   }
 }
@@ -135,8 +135,52 @@ const login = async (req, res) => {
   }
 };
 
+// http://localhost:3000/api/user/updateauth  (put)  --> use in postman
+const updatedata = zod.object({
+  password: zod.string(),
+})
+
+const update = async (req, res) => {
+  const { success, error } = updatedata.safeParse(req.body);
+
+  if (!success) {
+    return res.status(400).json({
+      message: "Error while updating information",
+      details: error.errors
+    });
+  }
+
+
+  const { password } = req.body;
+
+  try {
+    const user = await User.findById(req.userId)
+    if (!user) {
+      return res.status(404).json({
+        message: "User not found"
+      });
+    }
+
+    const hashedPassword = await bcrypt.hash(password, 10);
+
+    user.password = hashedPassword;
+    await user.save();
+
+    res.json({
+      message: "Password updated successfully"
+    });
+
+  } catch (error) {
+    res.status(500).json({
+      message: "Error while updating password",
+      details: error.message
+    });
+  }
+};
+
 
 module.exports = {
   register,
   login,
+  update
 }
