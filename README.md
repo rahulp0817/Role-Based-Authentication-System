@@ -1,6 +1,6 @@
 # Role-Based-Authentication-System
-Authentication the user using the Role-Based Access Control(RBAC). And hashing the password before it store to the database.
-Can be able to registration, login, and reset of password with validation of input.
+Authenticating the user using Role-Based Access Control(RBAC) and hashing the password before it is stored in the database.
+Can be able to register, login, and reset of passwords with validation of input.
 
 ## Tech Stack used
 - JavaScript
@@ -15,10 +15,10 @@ Can be able to registration, login, and reset of password with validation of inp
 ## Steps to execute
 1. Clone the repository
 2. Install the required packages by running `npm install` in the terminal
-3. Create a .env file and put the `PORT`, `JWT_SERECT` and `CONNECTION_STRING`
-4. Create a new MongoDB database and replace the `MONGO_URI` or use docker to create a Mongo image
+3. Create a .env file and put the `PORT`, `JWT_SERECT`, and `CONNECTION_STRING`
+4. Create a new MongoDB database or use docker to create a Mongo image and replace the `CONNECTION_STRING`
 5. Run the application by executing `node index.js` in the terminal or run `npm run dev`
-6. RUn the role based authentication use the barear token get after login or registration to access the particular role.
+6. Run the role-based authentication using the barear token get after login or registration to access the particular role.
 
 ## Execution
 - Register the user with the JWT sign and hash password
@@ -27,7 +27,7 @@ Can be able to registration, login, and reset of password with validation of inp
 - Database saved in MongoDB
 ![alt text](image-2.png)
 
-- Error regitrstions
+- Error registrations
   <img width="791" alt="postman-err-r1" src="https://github.com/user-attachments/assets/dd50cf72-c41b-4f4b-a1f5-1c3ce2c11e0e">
 
 - Login user
