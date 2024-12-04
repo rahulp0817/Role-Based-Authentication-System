@@ -27,9 +27,10 @@ Can be able to registration, login, and reset of password with validation of inp
 ![alt text](image-2.png)
 
 - Error regitrstions
-<img width="791" alt="postman-err-r1" src="https://github.com/user-attachments/assets/dd50cf72-c41b-4f4b-a1f5-1c3ce2c11e0e">
+  <img width="791" alt="postman-err-r1" src="https://github.com/user-attachments/assets/dd50cf72-c41b-4f4b-a1f5-1c3ce2c11e0e">
 
 - Login user
 ![alt text](image-1.png)
 
-- Admin Access
+- Role Access code -> use token to authenticate the user
+![alt text](image-3.png)
